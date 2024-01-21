@@ -1,8 +1,11 @@
 import { ApplicationConfig } from '@angular/core';
 import { provideRouter } from '@angular/router';
-
+import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes)]
+  providers: [provideRouter(routes),FormsModule,ReactiveFormsModule,FormGroup,Validators,FormBuilder],
+
+  
 };
